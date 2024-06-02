@@ -23,4 +23,4 @@ jobs:
       - name: Run build
         run: npm run build:apps:backend
       - name: ls
-        run: ls -lha
+        run: ls -lha apps/backend
