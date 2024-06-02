@@ -18,9 +18,13 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
+          registry-url: https://npm.pkg.github.com/
       - name: Install dependencies
         run: npm install
       - name: Run build
         run: npm run build:apps:backend
-      - name: ls
-        run: ls -lha apps/backend
+      - name: npm publish
+        working-directory: ./apps/backend
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUBTOKEN}}
