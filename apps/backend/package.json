@@ -33,7 +33,7 @@
     "bytes-iec": "^3.1.1",
     "dotenv": "^16.4.5",
     "pm2": "^5.4.0",
-    "systeminformation": "^5.22.10"
+    "systeminformation": "^5.33.16"
   },
   "devDependencies": {
     "@pm2.web/eslint-config": "*",
